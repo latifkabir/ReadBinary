@@ -15,4 +15,8 @@ Run the binary "Program" that is produced.
 
 
 3. What are the advantages:
+   i. Do the analysis in a programmer's style.
+   ii. Core analysis (except plotting) independent of ROOT.
+   iii. Better stability and error message (since independent of ROOT).
+   iv. Can be integrated to any other library or ROOT class easily.
  
