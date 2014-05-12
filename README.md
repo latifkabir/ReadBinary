@@ -1,7 +1,10 @@
+ReadBinary
+==========
 
 1. The ReadBinary class can read binary data produced by Data Acquisition system and give you the corresponding decimal value which is the very first step of any kind of analysis done in Physics or other fields. 
 
-2.How To Use:
+2. How To Use
+  ------------
 In your your analysis script --
 Include the header called ReadBinary.h 
 Define an ReadBinary object with the binary file as argument in your analysis. 
@@ -20,3 +23,8 @@ Run the binary "Program" that is produced.
    iii. Better stability and error message (since independent of ROOT).
    iv. Can be integrated to any other library or ROOT class easily.
  
+4. To run the example(scan.cpp) included 
+    From the directory where you have Makefile do:`make`
+    Run the executable `scan` 
+    Enter the channel number,starting point and number of entries to be printed
+    This will print the values for the desired entries

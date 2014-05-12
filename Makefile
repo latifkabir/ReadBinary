@@ -1,5 +1,5 @@
 #Latiful Kabir
-#Makefile for ReadBinary version:7 
+#Makefile for ReadBinary to scan data 
 #Date:05.09.14
 
 
@@ -9,14 +9,14 @@ CFLAGS=-c -Wall
 LDFLAGS=
 SOURCES=$(wildcard src/*.cpp)
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=asymmetry
+EXECUTABLE=scan
 all: $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS)
 	       $(CXX) $(LDFLAGS) $(OBJECTS) -o $@
 %.o:%.cpp
 	$(CXX) $(CFLAGS) $< -o $@
-	
+
 clear:
 	rm -f src/*.o
 
