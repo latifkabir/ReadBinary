@@ -14,6 +14,7 @@ In your your analysis script --
    6. Save the script as .cpp file in the same directory.
    7. From the directory where you have makefile just do: make 
    8. Run the binary "Program" that is produced. 
+   9. You can change the total number of channels (here 64) of your binary data file by modify my_data[64] in ReadBinary.cpp file.
 
 
 
