@@ -9,8 +9,8 @@ CFLAGS=-c -Wall
 LDFLAGS=
 SOURCES=$(wildcard src/*.cpp)
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=scan
-all: $(EXECUTABLE)
+EXECUTABLE=scan.exe
+scan: $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS)
 	       $(CXX) $(LDFLAGS) $(OBJECTS) -o $@
